@@ -1,0 +1,28 @@
+---- PortFunc Matches (29 in 12 files) ----
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 3754 : <LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 3773 : <LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 3779 : <BR><BR>[Calls]<UL><LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 4716 : <BR><BR>[Calls]<UL><LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 4982 : <P><STRONG><a name="[2ec]"></a>PortFunc_Register(unsigned char, bool(*)(Port, unsigned))</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, commulink.o(.text._Z17PortFunc_RegisterhPFb4PortjE))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 6005 : <BR><BR>[Calls]<UL><LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 6603 : <BR><BR>[Calls]<UL><LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 6609 : <BR><BR>[Calls]<UL><LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 6654 : <BR><BR>[Calls]<UL><LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+ACFly.htm (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Objects) line 6660 : <BR><BR>[Calls]<UL><LI><a href="#[2ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PortFunc_Register(unsigned char, bool(*)(Port, unsigned))
+{anonPortFunc} in Commulink.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) : 	}PortFunc;
+Commulink.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) line 304 : 	static PortFunc PortFuncs[256] = {0};
+Commulink.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) line 306 : 	bool PortFunc_Register( uint8_t FuncInd, bool (*init)( Port port, uint32_t param ) )
+PortFunc_Register in Commulink.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) : 		if( PortFuncs[FuncInd].init )
+PortFunc_Register in Commulink.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) : 		PortFuncs[FuncInd].init = init;
+Commulink_Server in Commulink.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) : 					if( PortFuncs[Func_temp[0]].init )
+Commulink_Server in Commulink.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) : 						PortFuncs[Func_temp[0]].init( Ports[i], Param_temp[0] );
+Commulink.hpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Communication) line 136 : 	bool PortFunc_Register( uint8_t FuncInd, bool (*init)( Port port, uint32_t param ) );
+init_drv_GPS in drv_GPS.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 12, GPS_DriverInit );
+init_drv_OpticalFlow_GL9306 in drv_OpticalFlow_GL9306.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 35, OpticalFlow_GL9306_DriverInit );
+init_drv_OpticalFlow_JL32xx in drv_OpticalFlow_JL32xx.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 34, OpticalFlow_JL32xx_DriverInit );
+init_drv_OpticalFlow_LC302 in drv_OpticalFlow_LC302.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 32, OpticalFlow_LC302_DriverInit );
+init_drv_OpticalFlow_LC306 in drv_OpticalFlow_LC306.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 33, OpticalFlow_LC306_DriverInit );
+init_drv_RTK in drv_RTK.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 13, RTK_DriverInit );
+init_drv_SDI in drv_SDI.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 100, SDI_DriverInit );
+init_drv_TFMini in drv_TFMini.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 52, TFMini_DriverInit );
+init_drv_UWB_LinkTrack in drv_UWB_LinkTrack.cpp (C:\Users\Administrator\Desktop\all\file\project\ACFLY-1\ACFly A9 20220304Beta_publish\Drivers) : 	PortFunc_Register( 41, UWB_LinkTrack_DriverInit );
